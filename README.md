@@ -1,7 +1,13 @@
 ## Tools
-- .nvmrc - Defines the supported node version to ensure a consistent developer experience. (Utilizes [nvm](https://github.com/nvm-sh/nvm), so that must be installed.)
-- Eslint - Javascript
-- Stylelint - CSS
-- [Prettier](https://prettier.io/docs/en/index.html) - Code formatting
-- Husky - Performs linting/formatting
-- lint-staged - lints only staged (changed) files, as opposed to the whole code base (The whole code base will be linted later, as a check for anything that was forced through, etc.)
+- [nvm](https://github.com/nvm-sh/nvm): Define the supported node version in a `.nvmrc` file, and then type `nvm use` into the terminal to ensure a consistent developer experience across environments. (The `use` command [can be automated](https://github.com/nvm-sh/nvm#automatically-call-nvm-use) per environment as well)
+  - Files
+    - `.nvmrc`
+- Eslint: Javascript
+- Stylelint: CSS
+- [Prettier](https://prettier.io/docs/en/index.html): Code formatting
+  - Files:
+    - `.prettier.json`
+    - `.prettierignore`
+    - scripts in `package.json`
+- Husky: Performs linting/formatting
+- lint-staged: lints only staged (changed) files, as opposed to the whole code base (The whole code base will be linted later, as a check for anything that was forced through, etc.)
