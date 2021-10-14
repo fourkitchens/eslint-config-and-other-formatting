@@ -8,5 +8,12 @@
   - Files:
     - `.prettier.json`
     - `.prettierignore`
+  - Integrations:
+    - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier): Configure Prettier to play nice with eslint
+      - Affects file: `.eslintrc.json`
+    - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier) Runs Prettier as an ESLint rule
+      - Affects file: `.eslintrc.json`
+    - [stylelint-config-prettier](https://github.com/prettier/stylelint-config-prettier): Configure Prettier to play nice with stylelint
+      - Affects file: `.stylelintrc.json`
 - Husky: Performs linting/formatting
 - lint-staged: lints only staged (changed) files, as opposed to the whole code base (The whole code base will be linted later, as a check for anything that was forced through, etc.)
