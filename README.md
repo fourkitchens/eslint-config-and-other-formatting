@@ -1,4 +1,5 @@
 ## Tools
+
 - [nvm](https://github.com/nvm-sh/nvm): Define the supported node version in a `.nvmrc` file, and then type `nvm use` into the terminal to ensure a consistent developer experience across environments. (The `use` command [can be automated](https://github.com/nvm-sh/nvm#automatically-call-nvm-use) per environment as well)
   - Files
     - `.nvmrc`
@@ -15,5 +16,5 @@
       - Affects file: `.eslintrc.json`
     - [stylelint-config-prettier](https://github.com/prettier/stylelint-config-prettier): Configure Prettier to play nice with stylelint
       - Affects file: `.stylelintrc.json`
-- Husky: Performs linting/formatting
-- lint-staged: lints only staged (changed) files, as opposed to the whole code base (The whole code base will be linted later, as a check for anything that was forced through, etc.)
+- [Husky](https://github.com/typicode/husky): Performs linting/formatting automatically around git commands. e.g. `git commit`, `git push`, etc.
+- [lint-staged](https://github.com/okonet/lint-staged): Used by Husky to lint only staged (changed) files, as opposed to the whole code base (Note: The whole code base will be linted later, as a check for anything that was forced through, etc. This mostly improves the day-to-day developer experience.)
