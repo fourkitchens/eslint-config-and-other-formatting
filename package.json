@@ -1,0 +1,10 @@
+{
+  "name": "coding-and-linting-standards",
+  "version": "1.0.0",
+  "description": "Four Kitchens' preferred linting and formatting standards.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brian Lewis",
+  "license": "ISC"
+}
