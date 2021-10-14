@@ -4,10 +4,9 @@
     - `.nvmrc`
 - Eslint: Javascript
 - Stylelint: CSS
-- [Prettier](https://prettier.io/docs/en/index.html): Code formatting
+- [Prettier](https://prettier.io/docs/en/index.html): Opinionated code formatter with support for many file types. You can configure your [editor to use prettier](https://prettier.io/docs/en/editors.html) so that code is formatted on save, for example.
   - Files:
     - `.prettier.json`
     - `.prettierignore`
-    - scripts in `package.json`
 - Husky: Performs linting/formatting
 - lint-staged: lints only staged (changed) files, as opposed to the whole code base (The whole code base will be linted later, as a check for anything that was forced through, etc.)
