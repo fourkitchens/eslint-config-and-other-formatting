@@ -1,0 +1,12 @@
+var myInt = 5; // eslint should flag this for using `var` instead of `let` or `const`.
+let myString = "My integer is " + myInt + "!"; // eslint should flag this for not using a template literal.
+
+const myFunction = function (myString2) {
+  // eslint should flag the above function for being an unnamed function.
+  myString2 = "Hello World"; // eslint should flag this for trying to reassign the function parameter.
+  const myString = myString2; // This should be flagged because you can't redeclare a variable.
+
+  return myString;
+};
+
+console.log(myFunction("Hello World")); // eslint should flag this as a warning because methods on `console` are considered debugging tools, and should not be committed.
