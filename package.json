@@ -11,7 +11,7 @@
     "prettier-fix": "prettier --write --ignore-unknown",
     "lint": "npm run eslint && npm run stylelint",
     "lint-fix": "npm run eslint -- --fix && npm run stylelint -- --fix",
-    "format": "npm run lint-fix && prettier-fix",
+    "format": "npm run lint-fix && npm run prettier-fix",
     "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,8 +23,10 @@
   "devDependencies": {
     "@commitlint/cli": "^13.2.1",
     "@commitlint/config-conventional": "^13.2.0",
-    "eslint": "^8.0.1",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-security": "^1.4.0",
     "husky": "^7.0.2",

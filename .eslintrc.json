@@ -3,13 +3,14 @@
     "browser": true,
     "es2021": true
   },
-  "extends": ["plugin:security/recommended", "plugin:prettier/recommended"],
+  "extends": [
+    "airbnb-base",
+    "plugin:security/recommended",
+    "plugin:prettier/recommended"
+  ],
   "plugins": ["security", "prettier"],
   "parserOptions": {
-    "ecmaVersion": 2020
-  },
-  "rules": {
-    "prettier/prettier": "error"
+    "ecmaVersion": 12
   },
   "root": true
 }
