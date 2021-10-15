@@ -20,7 +20,7 @@
       - Affects file: `.stylelintrc.json`
 - [Husky](https://github.com/typicode/husky): Performs linting/formatting automatically around git commands. e.g. `git commit`, `git push`, etc.
 - [lint-staged](https://github.com/okonet/lint-staged): Used by Husky to lint only staged (changed) files, as opposed to the whole code base (Note: The whole code base will be linted later, as a check for anything that was forced through, etc. This mostly improves the day-to-day developer experience.)
-- [Commit Lint](https://commitlint.js.org/#/): Verifies commit messages follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) standard for many reasons. One being that it automates release notes, and semantic version bumping.
+- [Commit Lint](https://commitlint.js.org/#/): Verifies commit messages follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) standard for many reasons. Particularly, the fact that it facilitates automated release notes, and semantic version bumping.
 
 ### CI (Build Environment)
 
