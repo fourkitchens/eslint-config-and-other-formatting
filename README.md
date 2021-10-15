@@ -12,11 +12,18 @@
   - Integrations:
     - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier): Configure Prettier to play nice with eslint
       - Affects file: `.eslintrc.json`
-    - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier) Runs Prettier as an ESLint rule
+    - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier) Runs Prettier as an ESLint rule and reports differences as individual ESLint issues.
       - Affects file: `.eslintrc.json`
     - [eslint-plugin-security](https://github.com/nodesecurity/eslint-plugin-security): Helps identify potential security hotspots.
       - Affects file: `.eslintrc.json`
-- Stylelint: CSS
+- [Stylelint](https://stylelint.io/): A linter that helps avoid errors and enforce conventions in style sheets. You can configure your [editor to use stylelint](https://stylelint.io/user-guide/integrations/editor) so that code is formatted on save, for example.
+  - Files:
+    - `.stylelintrc.json`
+  - Integrations:
+    - [stylelint-config-prettier](https://github.com/prettier/stylelint-config-prettier): Configure Prettier to play nice with stylelint
+      - Affects file: `.stylelintrc.json`
+    - [stylelint-prettier](https://github.com/prettier/stylelint-prettier): Runs Prettier as a Stylelint rule and reports differences as individual Stylelint issues.
+      - Affects file: `.stylelintrc.json`
 - [Prettier](https://prettier.io/docs/en/index.html): Opinionated code formatter with support for many file types. You can configure your [editor to use prettier](https://prettier.io/docs/en/editors.html) so that code is formatted on save, for example.
   - Files:
     - `.prettier.json`
@@ -24,9 +31,11 @@
   - Integrations:
     - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier): Configure Prettier to play nice with eslint
       - Affects file: `.eslintrc.json`
-    - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier) Runs Prettier as an ESLint rule
+    - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier) Runs Prettier as an ESLint rule and reports differences as individual ESLint issues.
       - Affects file: `.eslintrc.json`
     - [stylelint-config-prettier](https://github.com/prettier/stylelint-config-prettier): Configure Prettier to play nice with stylelint
+      - Affects file: `.stylelintrc.json`
+    - [stylelint-prettier](https://github.com/prettier/stylelint-prettier): Runs Prettier as a Stylelint rule and reports differences as individual Stylelint issues.
       - Affects file: `.stylelintrc.json`
 - [Husky](https://github.com/typicode/husky): Performs linting/formatting automatically around git commands. e.g. `git commit`, `git push`, etc.
 - [lint-staged](https://github.com/okonet/lint-staged): Used by Husky to lint only staged (changed) files, as opposed to the whole code base (Note: The whole code base will be linted later, as a check for anything that was forced through, etc. This mostly improves the day-to-day developer experience.)
