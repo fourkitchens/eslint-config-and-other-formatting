@@ -5,7 +5,17 @@
 - [nvm](https://github.com/nvm-sh/nvm): Define the supported node version in a `.nvmrc` file, and then type `nvm use` into the terminal to ensure a consistent developer experience across environments. (The `use` command [can be automated](https://github.com/nvm-sh/nvm#automatically-call-nvm-use) per environment as well)
   - Files
     - `.nvmrc`
-- Eslint: Javascript
+- [Eslint](https://eslint.org/docs/user-guide/getting-started0): A tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs.
+  - Files:
+    - `.eslintignore`
+    - `.eslintrc.json`
+  - Integrations:
+    - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier): Configure Prettier to play nice with eslint
+      - Affects file: `.eslintrc.json`
+    - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier) Runs Prettier as an ESLint rule
+      - Affects file: `.eslintrc.json`
+    - [eslint-plugin-security](https://github.com/nodesecurity/eslint-plugin-security): Helps identify potential security hotspots.
+      - Affects file: `.eslintrc.json`
 - Stylelint: CSS
 - [Prettier](https://prettier.io/docs/en/index.html): Opinionated code formatter with support for many file types. You can configure your [editor to use prettier](https://prettier.io/docs/en/editors.html) so that code is formatted on save, for example.
   - Files:
