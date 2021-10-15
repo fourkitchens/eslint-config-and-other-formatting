@@ -5,11 +5,16 @@
   "author": "Brian Lewis",
   "license": "ISC",
   "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --write --ignore-unknown",
     "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+    "**/*.js": [
+      "npm run lint",
+      "npm run format"
+    ]
   },
   "devDependencies": {
     "@commitlint/cli": "^13.2.1",

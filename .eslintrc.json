@@ -3,12 +3,13 @@
     "browser": true,
     "es2021": true
   },
-  "plugins": ["security", "prettier"],
   "extends": ["plugin:security/recommended", "plugin:prettier/recommended"],
+  "plugins": ["security", "prettier"],
   "parserOptions": {
-    "ecmaVersion": 13
+    "ecmaVersion": 2020
   },
   "rules": {
     "prettier/prettier": "error"
-  }
+  },
+  "root": true
 }
