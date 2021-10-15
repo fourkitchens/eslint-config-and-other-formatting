@@ -1,5 +1,5 @@
 {
-  "name": "coding-and-linting-standards",
+  "name": "linting-and-formatting-standards",
   "version": "1.0.0",
   "description": "Four Kitchens' preferred linting and formatting standards.",
   "author": "Brian Lewis",
@@ -16,7 +16,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "lint-staged": {
-    "**/*.{js,scss}": ["npm run format"]
+    "**/*.{js,scss}": [
+      "npm run format"
+    ]
   },
   "devDependencies": {
     "@commitlint/cli": "^13.2.1",
