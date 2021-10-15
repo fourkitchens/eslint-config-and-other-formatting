@@ -5,16 +5,18 @@
   "author": "Brian Lewis",
   "license": "ISC",
   "scripts": {
-    "lint": "eslint .",
-    "format": "prettier --write --ignore-unknown",
+    "eslint": "eslint .",
+    "stylelint": "stylelint '**/*.scss'",
+    "prettier": "prettier --ignore-unknown",
+    "prettier-fix": "prettier --write --ignore-unknown",
+    "lint": "npm run eslint && npm run stylelint",
+    "lint-fix": "npm run eslint -- --fix && npm run stylelint -- --fix",
+    "format": "npm run lint-fix && prettier-fix",
     "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "lint-staged": {
-    "**/*.js": [
-      "npm run lint",
-      "npm run format"
-    ]
+    "**/*.{js,scss}": ["npm run format"]
   },
   "devDependencies": {
     "@commitlint/cli": "^13.2.1",
