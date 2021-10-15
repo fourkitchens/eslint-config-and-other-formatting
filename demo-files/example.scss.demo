@@ -1,0 +1,26 @@
+@mixin cool-thing {
+  // There are two errors in the following line.
+  // 1: hex values should be lower-case.
+  // 2: Colors should use shorthand (three-character) when possible.
+  background: #FFFF00;
+  // There are three errors in the next line.
+  // 1: Trailing zeros (after the decimal) provide no value, so they should be omitted.
+  // 2: Each style should be on a new line, so "padding" should move down.
+  // 3: "0" values should be unit-less, so the padding style should just be `padding: 0;`
+  font-size: 12.0px; padding: 0px;
+  // Fractional values less than 1 must include a leading zero.
+  height: .9rem;
+}
+
+.awesome .component {
+  // Missing a semicolon at the end of the line.
+  display: block
+}
+
+// `.component` is lower specificity than `.awesome .component` above, so it should come first in source order.
+.component {
+  // There are two semicolons. One should be removed.
+  @include cool-thing;;
+
+  display: flex;
+}
