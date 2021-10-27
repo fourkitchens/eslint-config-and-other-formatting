@@ -1,0 +1,12 @@
+<?php
+class Foo {
+    public function bar() {
+        /*
+         * Comment line 1.
+         * Comment line 2.
+         */
+        if ($foo) {
+            echo 'foo';
+        }
+    }
+}

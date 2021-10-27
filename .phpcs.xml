@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="Drupal Project">
+  <arg name="extensions" value="inc,info,install,module,php,profile,test,theme" />
+  <!--
+    Uncomment the following three lines for a Drupal project and delete the
+    ./demo-files line.
+  -->
+  <!-- <file>./docroot/modules</file> -->
+  <!-- <file>./docroot/themes</file> -->
+  <!-- <file>./docroot/profiles</file> -->
+  <file>./demo-files</file>
+  <exclude-pattern>vendor</exclude-pattern>
+  <exclude-pattern>contrib</exclude-pattern>
+  <exclude-pattern>tests</exclude-pattern>
+  <exclude-pattern>node_modules</exclude-pattern>
+  <rule ref="Drupal"/>
+  <rule ref="PHPCompatibility"/>
+  <config name="testVersion" value="7.4"/>
+</ruleset>

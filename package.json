@@ -11,14 +11,16 @@
     "stylelint": "stylelint '**/*.scss'",
     "prettier": "prettier --ignore-unknown",
     "prettier-fix": "prettier --write --ignore-unknown",
-    "lint": "npm run eslint && npm run stylelint",
-    "lint-fix": "npm run eslint -- --fix && npm run stylelint -- --fix",
+    "lint": "npm run eslint && npm run stylelint && npm run phpcs",
+    "lint-fix": "npm run eslint -- --fix && npm run stylelint -- --fix && npm run phpcbf",
     "format": "npm run lint-fix && npm run prettier-fix",
     "prepare": "husky install",
+    "phpcs": "vendor/bin/phpcs",
+    "phpcbf": "vendor/bin/phpcbf",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "lint-staged": {
-    "**/*.{js,scss}": [
+    "**/*.{js,scss,php}": [
       "npm run format"
     ]
   },
