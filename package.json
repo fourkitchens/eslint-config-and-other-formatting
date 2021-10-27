@@ -6,6 +6,8 @@
   "license": "ISC",
   "scripts": {
     "eslint": "eslint .",
+    "husky:commit-msg": "commitlint --edit $1",
+    "husky:pre-commit": "lint-staged",
     "stylelint": "stylelint '**/*.scss'",
     "prettier": "prettier --ignore-unknown",
     "prettier-fix": "prettier --write --ignore-unknown",
