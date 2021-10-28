@@ -14,8 +14,8 @@
     "lint-php": "vendor/bin/phpcs",
     "lint-styles": "stylelint '**/*.scss'",
     "prepare": "husky install",
-    "prettier": "prettier --ignore-unknown",
-    "prettier-fix": "prettier --write --ignore-unknown",
+    "prettier": "prettier ./demo-files --ignore-unknown",
+    "prettier-fix": "prettier ./demo-files --write --ignore-unknown",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "lint-staged": {

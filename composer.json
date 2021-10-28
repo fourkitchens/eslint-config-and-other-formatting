@@ -1,7 +1,7 @@
 {
-    "require": {
-        "drupal/coder": "^8.3.13",
-        "phpcompatibility/php-compatibility": "^9.3",
-        "dealerdirect/phpcodesniffer-composer-installer": "^0.7"
-    }
+  "require": {
+    "drupal/coder": "^8.3.13",
+    "phpcompatibility/php-compatibility": "^9.3",
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.7"
+  }
 }
