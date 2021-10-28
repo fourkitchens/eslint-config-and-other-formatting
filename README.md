@@ -2,17 +2,17 @@
 
 - Clone this repo.
 - Remove the `.demo` suffix from the example files in the `demo-files` directory.
-- Run `nvm use` to verify you're on the correct version of node/npm
-- Run `npm install` to install the dependencies
+- Run `nvm use` to verify you're on the correct version of node/npm.
+- Run `npm install` to install the node dependencies.
+- Run `composer install` to install the php dependencies.
 - Run one (or more) of the following to see the linting and formatting options in action:
-  - `npm run eslint` This will show you js errors in the console without fixing them.
-  - `npm run stylelint` This will show you scss errors in the console without fixing them.
+  - `npm run lint-js` This will show you js errors in the console without fixing them.
+  - `npm run lint-styles` This will show you scss errors in the console without fixing them.
+  - `npm run lint-php` This will show you php code sniffer errors.
   - `npm run lint` This will run eslint and stylelint and show errors in the console without fixing them.
   - `npm run lint-fix` This will auto-fix all possible linting errors.
   - `npm run prettier` This will show you formatting (prettier) errors in the console without fixing them.
   - `npm run prettier-fix` This will auto-fix all possible formatting errors.
-  - `npm run phpcs` This will show you php code sniffer errors.
-  - `npm run phpcbf` This will auto-fix all possible phpcs errors.
   - `npm run format` This will auto-fix all possible linting and formatting errors at once.
 - Restore the content of any auto-fixed files to the state they came in with this repo and add them for commit `git add .`
 - Try to submit a commit message that follows the Conventional Commits standard `git commit -m "feat: my awesome new feature"` (more about this below)
