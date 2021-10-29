@@ -17,7 +17,7 @@
 - Restore the content of any auto-fixed files to the state they came in with this repo and add them for commit `git add .`
 - Try to submit a commit message that follows the Conventional Commits standard `git commit -m "feat: my awesome new feature"` (more about this below)
 
-  - You'll see that linting and formatting are run, and any auto-fixable issues are fixed, but there are some in the js that can't be, so the commit fails.
+  - You'll see that linting and formatting are run, and any auto-fixable issues are fixed, but there are some that need manual fixing, so the commit fails.
   - Edit `example.js` again, and paste in the following (fixing all errors, but leaving the `console.log` warning).
   - ```
     const myInt = 5;
@@ -32,11 +32,7 @@
     console.log(myFunction("Hello World"));
     ```
 
-  - Stage the updated file, and try the same commit message again.
-  - This time, you'll see the warning, but the js file will be committed and the commit proceeds. However, you'll now see an error in the scss.
-  - Move the `.awesome .component` chunk to the end of the file and save it.
-  - Stage the updated file, and try the same commit message again.
-  - This time, you'll get an error about php errors. You'll see 15 were fixed, but there are three that need manual attention.
+  - Edit `example.scss` and move the `.awesome .component` chunk to the end of the file.
   - Edit `Example.php` and paste in the following:
   - ```
     <?php
@@ -62,7 +58,7 @@
     }
     ```
 
-  - Save the file and stage it. Now, everything should pass linting, so let's test the commit linter.
+  - Save all of the files and stage them. Now, everything should pass linting, so let's test the commit linter.
 
 - Try to submit a commit that does not follow the Conventional Commits standard `git commit -m "my awesome new feature"`
   - You'll see an error that you forgot to include the "subject" and the "type"
