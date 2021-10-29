@@ -5,11 +5,11 @@
   "author": "Brian Lewis",
   "license": "ISC",
   "scripts": {
-    "format": "npm run lint-fix && npm run prettier-fix",
+    "format": "npm run lint-fix; npm run prettier-fix",
     "husky:commit-msg": "commitlint --edit $1",
     "husky:pre-commit": "lint-staged",
     "lint": "npm run lint-js; npm run lint-styles; npm run lint-php",
-    "lint-fix": "npm run lint-js -- --fix && npm run lint-styles -- --fix && vendor/bin/phpcbf",
+    "lint-fix": "npm run lint-js -- --fix; npm run lint-styles -- --fix; vendor/bin/phpcbf",
     "lint-js": "eslint .",
     "lint-php": "vendor/bin/phpcs",
     "lint-styles": "stylelint '**/*.scss'",
@@ -19,8 +19,17 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "lint-staged": {
+    "**/*.js": [
+      "npm run lint-js -- --fix"
+    ],
+    "**/*.scss": [
+      "npm run lint-styles -- --fix"
+    ],
+    "**/*.php": [
+      "vendor/bin/phpcbf"
+    ],
     "**/*.{js,scss,php}": [
-      "npm run format"
+      "npm run prettier-fix"
     ]
   },
   "devDependencies": {
