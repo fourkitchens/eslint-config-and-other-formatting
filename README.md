@@ -1,4 +1,5 @@
 ## Quick Setup
+
 - To install the JS tools below, use the following command: `npm install --save-dev eslint@^7 eslint-config-airbnb-base@^14 eslint-config-prettier@^8 eslint-plugin-import@^2 eslint-plugin-prettier@^4 eslint-plugin-security@^1 prettier@2.4.1`
 - To install the CSS tools below, use the following command: `npm install --save-dev stylelint@^13 stylelint-config-prettier@^9 stylelint-config-standard@^22 stylelint-prettier@^1 prettier@2.4.1`
 - To install the PHP tools below, use the following command: `composer require drupal/coder:^8.3.13 phpcompatibility/php-compatibility:^9.3 dealerdirect/phpcodesniffer-composer-installer:^0.7`
@@ -6,7 +7,9 @@
 - Finally, update the scripts in your `package.json` file according to the one in this project.
 
 ## Usage
+
 - If you're not familiar with linters, or how they work, there's a step-by-step example in [Usage.md](https://github.com/fourkitchens/linting-and-formatting-standards/blob/main/Usage.md) that walks you through everything documented here. Try it out!
+
 ## Tools Used
 
 ### Javascript
@@ -47,7 +50,7 @@
 
 - [Prettier](https://prettier.io/docs/en/index.html): Opinionated code formatter with support for many file types. You can configure your [editor to use prettier](https://prettier.io/docs/en/editors.html) so that code is formatted on save, for example.
   - Files:
-    - [`.prettier.json`](https://github.com/fourkitchens/linting-and-formatting-standards/blob/main/.prettier.json)
+    - [`.prettierrc.json`](https://github.com/fourkitchens/linting-and-formatting-standards/blob/main/.prettierrc.json)
     - [`.prettierignore`](https://github.com/fourkitchens/linting-and-formatting-standards/blob/main/.prettierignore)
   - Integrations:
     - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier): Configure Prettier to play nice with eslint
@@ -89,5 +92,6 @@ There is very little you need to do locally to use this set of tools. An `nvm us
 ## CI (Build Environment)
 
 _NOTE: This section is not complete._
+
 - [semantic-release](https://github.com/semantic-release/semantic-release) or [standard-version](https://github.com/conventional-changelog/standard-version) for automated version bumping (based on commit messages.)
 - Run fixes to ensure nothing was forced through
