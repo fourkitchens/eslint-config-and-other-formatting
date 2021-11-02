@@ -4,7 +4,11 @@
 - To install the CSS tools below, use the following command: `npm install --save-dev stylelint@^13 stylelint-config-prettier@^9 stylelint-config-standard@^22 stylelint-prettier@^1 prettier@2.4.1`
 - To install the PHP tools below, use the following command: `composer require drupal/coder:^8.3.13 phpcompatibility/php-compatibility:^9.3 dealerdirect/phpcodesniffer-composer-installer:^0.7`
 - Then you'll need to copy the config files for each linter into your project (see the respective sections below).
-- Finally, update the scripts in your `package.json` file according to the one in this project.
+- To install the Utilities below, use the following command: `npm install --save-dev @commitlint/config-conventional@^13 @commitlint/cli@^13 husky@^7 lint-staged@^11`
+  - Install Husky hooks `npx husky install`
+  - Create the commitlint hook `npx husky add .husky/commit-msg 'npm run husky:commit-msg'`
+  - Create the pre-commit hook `npx husky add .husky/pre-commit 'npm run husky:pre-commit'`
+- Finally, update the scripts (and, if necessary, add the `lint-staged` section) in your `package.json` file according to the one in this project.
 
 ## Usage
 
