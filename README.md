@@ -35,7 +35,6 @@ There must be a `.npmrc` file in the project root that tells npm to get `@fourki
 
 ```bash
 @fourkitchens:registry=https://npm.pkg.github.com
-//npm.pkg.github.com/:_authToken=${FOUR_KITCHENS_BUILD_TOKEN}
 ```
 
 Then you can install the package like any other npm dependency.
