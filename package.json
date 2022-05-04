@@ -27,6 +27,7 @@
     "prepare": "husky install",
     "prettier": "prettier ./demo-files --ignore-unknown",
     "prettier-fix": "prettier ./demo-files --write --ignore-unknown",
+    "semantic-release": "semantic-release",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {},
