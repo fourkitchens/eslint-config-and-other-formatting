@@ -44,10 +44,6 @@ Then you can install the package like any other npm dependency.
 npm install --save-dev @fourkitchens/eslint-config-and-other-formatting
 ```
 
-## Usage
-
-- If you're not familiar with linters, or how they work, there's a step-by-step example in [Usage.md](https://github.com/fourkitchens/linting-and-formatting-standards/blob/main/Usage.md) that walks you through everything documented here. Try it out!
-
 ## Tools Used
 
 ### Prettier: General Code Formatting
@@ -209,6 +205,10 @@ module.exports = {
 
 ## TODO
 The rest of this file needs updating. The PHP stuff should probably be removed entirely and released on packagist, rather than being a part of this npm package.
+
+## Usage
+
+- If you're not familiar with linters, or how they work, there's a step-by-step example in [Usage.md](https://github.com/fourkitchens/linting-and-formatting-standards/blob/main/Usage.md) that walks you through everything documented here. Try it out!
 
 ### PHP
 
