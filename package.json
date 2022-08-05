@@ -25,12 +25,11 @@
     "lint-php": "vendor/bin/phpcs",
     "lint-styles": "stylelint '**/*.scss'",
     "prepare": "husky install",
-    "prettier": "prettier ./demo-files --ignore-unknown",
-    "prettier-fix": "prettier ./demo-files --write --ignore-unknown",
+    "prettier": "prettier ./demo-files --ignore-unknown --no-error-on-unmatched-pattern",
+    "prettier-fix": "prettier ./demo-files --write --ignore-unknown --no-error-on-unmatched-pattern",
     "semantic-release": "semantic-release",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {},
   "devDependencies": {
     "@commitlint/cli": "^16.0.1",
     "@commitlint/config-conventional": "^16.0.0",
@@ -46,6 +45,7 @@
     "stylelint": "^14.2.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard-scss": "^3.0.0",
+    "stylelint-order": "^5.0.0",
     "stylelint-prettier": "^2.0.0",
     "stylelint-selector-bem-pattern": "^2.1.1"
   },
