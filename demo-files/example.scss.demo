@@ -24,3 +24,11 @@
 
   display: flex;
 }
+
+%placeholder-text {
+  background: green;
+}
+
+.extend-test {
+  @extend %placeholder-text
+}

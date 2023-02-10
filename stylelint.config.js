@@ -9,6 +9,7 @@ module.exports = {
           'at-root',
           'each',
           'else',
+          'extend',
           'forward',
           'function',
           'if',
